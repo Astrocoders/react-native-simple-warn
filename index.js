@@ -40,7 +40,7 @@ export default class Warn extends Component {
       <Animated.View
         style={[warnStyles, {
           alignItems: 'center',
-          justifycontent: 'center',
+          justifyContent: 'center',
           paddingVertical: 10,
         }, this.props.style]}
       >
