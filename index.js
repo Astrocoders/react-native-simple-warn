@@ -3,11 +3,14 @@ import {
   Component,
   Animated,
   Text,
+  View,
 } from 'react-native';
 
 export default class Warn extends Component {
   static propTypes = {
     message: PropTypes.string,
+    style: View.propTypes.style,
+    textStyle: View.propTypes.style,
   }
 
   constructor(props){
@@ -39,9 +42,9 @@ export default class Warn extends Component {
           alignItems: 'center',
           justifycontent: 'center',
           paddingVertical: 10,
-        }]}
+        }, this.props.style]}
       >
-        <Text>{this.props.message}</Text>
+        <Text style={this.props.textStyle}>{this.props.message}</Text>
       </Animated.View>
     );
   }
