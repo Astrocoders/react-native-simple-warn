@@ -1,0 +1,24 @@
+{
+  "name": "react-native-simple-warn",
+  "version": "1.0.0",
+  "description": "Simple warn for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Astrocoders/react-native-simple-warn.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "warn"
+  ],
+  "author": "Astrocoders <astrocoders.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Astrocoders/react-native-simple-warn/issues"
+  },
+  "homepage": "https://github.com/Astrocoders/react-native-simple-warn#readme"
+}
