@@ -10,7 +10,12 @@ export default class Warn extends Component {
   static propTypes = {
     message: PropTypes.string,
     style: View.propTypes.style,
-    textStyle: View.propTypes.style,
+    textStyle: Text.propTypes.style,
+    offset: PropTypes.number,
+  }
+
+  static defaultProps = {
+    offset: 0,
   }
 
   constructor(props){
@@ -18,7 +23,7 @@ export default class Warn extends Component {
 
     this.warnStyles = {
       height: 40,
-      marginTop: new Animated.Value(-40),
+      marginTop: new Animated.Value(this.getMarginTop()),
     };
   }
 
@@ -30,8 +35,12 @@ export default class Warn extends Component {
 
   disappear(){
     Animated.timing(this.warnStyles.marginTop, {
-      toValue: -40,
+      toValue: this.getMarginTop(),
     }).start();
+  }
+
+  getMarginTop(){
+    return -(this.props.offset + 40);
   }
 
   render(){
