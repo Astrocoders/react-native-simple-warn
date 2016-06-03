@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-warn",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Simple warn for React Native",
   "main": "index.js",
   "scripts": {
