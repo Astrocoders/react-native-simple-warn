@@ -1,12 +1,11 @@
 import React, { PropTypes } from 'react';
 import {
-  Component,
   Animated,
   Text,
   View,
 } from 'react-native';
 
-export default class Warn extends Component {
+export default class Warn extends React.Component {
   static propTypes = {
     message: PropTypes.string,
     style: View.propTypes.style,
